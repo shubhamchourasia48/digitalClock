@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box ;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #6e5ad4;
+  font-family: 'Staatliches', sans-serif ;
+}
+
+.wraper{
+  text-align: center;
+  font-size: 2vw;
+  
+}
+.glow{
+  font-size: 6vw;
+  animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
